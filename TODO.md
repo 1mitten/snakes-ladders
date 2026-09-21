@@ -5,7 +5,7 @@
 
 ## Feature 2: Winning the Game
 - [X] 2.1 Given Player 1 is on Square 97, when they roll a 3, they land on Square 100 and Player 1 wins
-- [ ] 2.2 Given Player 1 is on Square 97, when they roll a 4, they bounce back to Square 99
+- [X] 2.2 Given Player 1 is on Square 97, when they roll a 4, they bounce back to Square 99
 - [ ] 2.3 Given a player has won, further turns are ignored
 - [ ] A turn that doesn't reach 100 leaves the game in progress
 - [ ] Bounce boundaries: 99 + 1 → 100, 99 + 6 → 95, 95 + 6 → 99

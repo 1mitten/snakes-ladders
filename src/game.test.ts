@@ -39,3 +39,13 @@ it("Given Player 1 is on Square 97, when they roll a 3, they land on Square 100 
   expect(game.players[0].square).toBe(100);
   expect(game.state).toEqual("WON");
 });
+
+it("2.2 Given Player 1 is on Square 97, when they roll a 4, they bounce back to Square 99", () => {
+  const game = new Game({
+    roll: vi.fn().mockReturnValueOnce(4),
+  });
+
+  game.players[0].square = 97;
+  game.takeTurn();
+  expect(game.players[0].square).toBe(99);
+});

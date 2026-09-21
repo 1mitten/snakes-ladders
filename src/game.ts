@@ -26,7 +26,7 @@ export class Game {
     }
 
     takeTurn(): void {
-        this.currentPlayer.move(this.currentPlayer.square + this.dice.roll());
+        this.currentPlayer.move(this.board.ValidateMove(this.currentPlayer.square, this.dice.roll()));
 
         if(this.currentPlayer.square === this.board.finalSquare){
             this.gameState = "WON";
