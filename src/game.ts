@@ -7,9 +7,14 @@ export class Game {
     readonly dice: Dice;
     readonly players: readonly [Player,Player]
 
-    constructor(board: Board = new Board(), dice: Dice = new Dice){
+    constructor(dice: Dice = new Dice, board: Board = new Board()){
         this.dice = dice;
         this.board = board;
         this.players = [new Player(), new Player()]
+    }
+
+
+    takeTurn(): void {
+        this.players[0].move(this.players[0].square + this.dice.roll());
     }
 }

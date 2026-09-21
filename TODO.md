@@ -1,6 +1,6 @@
 ## Feature 1: Starting & Moving
 - [X] 1.1 A new game starts with Player 1 and Player 2 on Square 1
-- [ ] 1.2 Given Player 1 is on Square 1, when they roll a 4, they land on Square 5
+- [X] 1.2 Given Player 1 is on Square 1, when they roll a 4, they land on Square 5
 - [ ] 1.3 Given Player 1 is on Square 1, when they roll a 3 and then a 4, they land on Square 8
 - [ ] A new game is in progress with no winner
 
@@ -18,11 +18,10 @@
 
 ## Board (from General Rules)
 
-- [ ] The board starts at Square 1
-- [ ] The board ends at Square 100
+- [X] The board starts at Square 1
+- [X] The board ends at Square 100
 - [ ] The game is won by landing on the board's final square 
 
 ## Dice
 
-- [ ] The die always rolls a whole number from 1 to 6
-- [ ] The die can roll every face from 1 to 6
+- [X] The die always rolls a whole number from 1 to 6
