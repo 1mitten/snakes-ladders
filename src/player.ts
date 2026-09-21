@@ -1,1 +1,3 @@
-export class Player {}
+export class Player {
+    square:number = 1
+}

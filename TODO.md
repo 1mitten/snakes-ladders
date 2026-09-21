@@ -1,5 +1,5 @@
 ## Feature 1: Starting & Moving
-- [ ] 1.1 A new game starts with Player 1 and Player 2 on Square 1
+- [X] 1.1 A new game starts with Player 1 and Player 2 on Square 1
 - [ ] 1.2 Given Player 1 is on Square 1, when they roll a 4, they land on Square 5
 - [ ] 1.3 Given Player 1 is on Square 1, when they roll a 3 and then a 4, they land on Square 8
 - [ ] A new game is in progress with no winner
