@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "test": "vitest run",
-    "start": "node src/index.ts",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc",

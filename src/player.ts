@@ -1,8 +1,8 @@
 export class Player {
   square: number = 1;
 
-/**
- * Move a player to the designated square
+  /**
+   * Moves the player to the specified square.
  * @param square 
  */
   move(square: number): void {
