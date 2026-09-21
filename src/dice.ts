@@ -1,12 +1,11 @@
 import { randomInt } from "crypto";
 
 export class Dice {
-
-    /**
-     * Dice roll
-     * @returns Random number 
-     */
-    roll(): number {
-        return randomInt(1, 7);
-    }
+  /**
+   * Dice roll
+   * @returns Random number
+   */
+  roll(): number {
+    return randomInt(1, 7);
+  }
 }

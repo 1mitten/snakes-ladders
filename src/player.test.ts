@@ -1,18 +1,18 @@
-import { expect, it } from 'vitest';
-import { Player } from './player.ts'
+import { expect, it } from "vitest";
+import { Player } from "./player.ts";
 
-it('Player object exists', () => {
+it("Player object exists", () => {
   expect(Player).toBeDefined();
 });
 
 // This would cover any player to start on square 1
-it('1.1 A new game starts with Player 1 and Player 2 on Square 1', () => {
+it("1.1 A new game starts with Player 1 and Player 2 on Square 1", () => {
   const player = new Player();
-  expect(player.square).toBe(1)
+  expect(player.square).toBe(1);
 });
 
-it('Player needs to move', () => {
+it("Player needs to move", () => {
   const player = new Player();
   player.move(3);
-  expect(player.square).toBe(3)
+  expect(player.square).toBe(3);
 });

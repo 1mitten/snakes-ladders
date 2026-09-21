@@ -24,7 +24,10 @@ export class Game {
   get currentPlayer(): Player {
     return this.players[this.currentPlayerIndex];
   }
-
+  /**
+   * Determinstic player turn
+   * @returns Current Game State
+   */
   takeTurn(): GameState {
     if (this.gameState === "WON") {
       return this.gameState;
