@@ -1,22 +1,26 @@
 # snakes-ladders
 
-`TASK.MD` For the task information
-`TODO.md` Checklist to do list to understand the work required
+- `TASK.md`: the task brief.
+- `TODO.md`: a checklist of the tests required, including edge cases and assumptions.
 
 ## Tooling
 
 - Node 24
-- Typescript 6.0.3
-- Vitest for testing 
+- TypeScript 6.0.3
+- Vitest for testing
 
 ## Approach
 
-Test Driven Development (TDD)
+The engine was built using test-driven development (TDD):
 
-1.  Look at requirements and constraints, create a TODO list to break down the tests required, possible edge cases and information inbetween
-2.  Create tests first Red, Green and refactor
+1. Reviewed the requirements and constraints, then created a TODO list breaking down the tests required, possible edge cases and any assumptions.
+2. Wrote each test first, then followed the red, green, refactor cycle.
 
-`npm run test`
-`npm run test:coverage`
+## Running the tests
 
-There is no working program as the test was to focus on the core engine/
+    npm run test
+    npm run test:coverage
+
+## Notes
+
+There is no runnable program, as the task focuses on the core engine rather than a UI.
