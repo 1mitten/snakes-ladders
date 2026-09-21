@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // Output / module system
+    "target": "es2024",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noEmit": true,                     // Vitest and Node run the .ts directly; tsc only type-checks
+    "allowImportingTsExtensions": true, // import './game.ts' works in Node and Vitest
+    "verbatimModuleSyntax": true,       // forces `import type` for types
+    "erasableSyntaxOnly": true,         // bans enums/namespaces/parameter properties so Node can strip types
+    "isolatedModules": true,
+
+    // Strictness (strict is default in TS 6, stated explicitly for the reader)
+    "strict": true,
+    "noUncheckedIndexedAccess": true,   // array[i] is T | undefined — catches board-index bugs
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Environment
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": ["src", "vitest.config.ts"]
+}
