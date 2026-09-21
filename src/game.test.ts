@@ -49,3 +49,21 @@ it("2.2 Given Player 1 is on Square 97, when they roll a 4, they bounce back to 
   game.takeTurn();
   expect(game.players[0].square).toBe(99);
 });
+
+
+it("2.3 Given a player has won, further turns are ignored", () => {
+  const game = new Game({
+    roll: vi.fn().mockReturnValueOnce(4),
+  });
+
+  game.players[0].square = 96;
+  game.takeTurn();
+  expect(game.players[0].square).toBe(100);
+  expect(game.state).toEqual("WON")
+  game.takeTurn();
+  expect(game.players[0].square).toBe(100);
+  expect(game.state).toBe("WON")
+});
+
+
+
