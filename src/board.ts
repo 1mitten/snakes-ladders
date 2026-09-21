@@ -4,4 +4,8 @@ export class Board {
     constructor(size = 100){
         this.size = size;
     }
+
+    get finalSquare(): number {
+        return this.size;
+    }
 }

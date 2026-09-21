@@ -1,5 +1,6 @@
 import { expect, it, vi } from "vitest";
 import { Game } from "./game.ts";
+import { generatePrimeSync } from "crypto";
 
 it("Game object exists", () => {
   expect(Game).toBeDefined();
@@ -25,4 +26,16 @@ it("1.3 Given Player 1 is on Square 1, when they roll a 3 and then a 4, they lan
   expect(game.players[0].square).toBe(4);
   game.takeTurn();
   expect(game.players[0].square).toBe(8);
+});
+
+it("Given Player 1 is on Square 97, when they roll a 3, they land on Square 100 and Player 1 wins", () => {
+  const game = new Game({
+    roll: vi.fn().mockReturnValueOnce(3),
+  });
+
+  game.players[0].square = 97;
+  expect(game.players[0].square).toBe(97);
+  game.takeTurn();
+  expect(game.players[0].square).toBe(100);
+  expect(game.state).toEqual("WON");
 });

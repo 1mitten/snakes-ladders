@@ -1,11 +1,10 @@
 ## Feature 1: Starting & Moving
 - [X] 1.1 A new game starts with Player 1 and Player 2 on Square 1
 - [X] 1.2 Given Player 1 is on Square 1, when they roll a 4, they land on Square 5
-- [ ] 1.3 Given Player 1 is on Square 1, when they roll a 3 and then a 4, they land on Square 8
-- [ ] A new game is in progress with no winner
+- [X] 1.3 Given Player 1 is on Square 1, when they roll a 3 and then a 4, they land on Square 8
 
 ## Feature 2: Winning the Game
-- [ ] 2.1 Given Player 1 is on Square 97, when they roll a 3, they land on Square 100 and Player 1 wins
+- [X] 2.1 Given Player 1 is on Square 97, when they roll a 3, they land on Square 100 and Player 1 wins
 - [ ] 2.2 Given Player 1 is on Square 97, when they roll a 4, they bounce back to Square 99
 - [ ] 2.3 Given a player has won, further turns are ignored
 - [ ] A turn that doesn't reach 100 leaves the game in progress

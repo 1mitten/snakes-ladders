@@ -2,10 +2,14 @@ import { Board } from "./board.ts";
 import { Dice } from "./dice.ts";
 import { Player } from "./player.ts";
 
+export type GameState = "IN_PROGRESS" | "WON"
+
 export class Game {
     readonly board: Board;
     readonly dice: Dice;
-    readonly players: readonly [Player,Player]
+    readonly players: readonly [Player,Player];
+    private gameState: GameState = "IN_PROGRESS";
+    private currentPlayerIndex: 0 | 1 = 0;
 
     constructor(dice: Dice = new Dice, board: Board = new Board()){
         this.dice = dice;
@@ -13,8 +17,20 @@ export class Game {
         this.players = [new Player(), new Player()]
     }
 
+    get state(): GameState {
+        return this.gameState;
+    }
+
+    get currentPlayer(): Player {
+        return this.players[this.currentPlayerIndex];
+    }
 
     takeTurn(): void {
-        this.players[0].move(this.players[0].square + this.dice.roll());
+        this.currentPlayer.move(this.currentPlayer.square + this.dice.roll());
+
+        if(this.currentPlayer.square === this.board.finalSquare){
+            this.gameState = "WON";
+            return;
+        }
     }
 }
