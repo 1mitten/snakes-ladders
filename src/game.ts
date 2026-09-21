@@ -37,6 +37,8 @@ export class Game {
       this.gameState = "WON";
     }
 
+    this.currentPlayerIndex = this.currentPlayerIndex === 0 ? 1 : 0;
+
     return this.gameState;
   }
 }
