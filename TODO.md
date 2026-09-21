@@ -10,8 +10,8 @@
 
 ## Feature 3: Turns & Multiple Players
 - [X] 3.1 After Player 1 rolls, it is Player 2's turn
-- [ ] 3.2 After Player 2 rolls, the turn returns to Player 1
-- [ ] 3.3 Player 1 rolling a 3 doesn't change Player 2's square
+- [X] 3.2 After Player 2 rolls, the turn returns to Player 1
+- [X] 3.3 Player 1 rolling a 3 doesn't change Player 2's square
 
 ## Board (from General Rules)
 
